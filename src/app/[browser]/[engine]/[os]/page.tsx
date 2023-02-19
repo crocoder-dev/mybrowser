@@ -8,9 +8,7 @@ import { Inter } from '@next/font/google';
 
 const inter = Inter({ subsets: ['latin'] });
 
-const page: NextPage<{
-  params: { browser: string; engine: string; os: string };
-}> = ({ params }) => {
+const page = ({ params }: { params: { browser: string; engine: string; os: string } }) => {
   const { browser, engine, os } = params;
 
   const [browserName, ...browserRest] = browser.split("-");
