@@ -1,8 +1,7 @@
-import { NextPage } from "next";
 import {
   CursorArrowRaysIcon,
-  EnvelopeOpenIcon,
-  UsersIcon,
+  ComputerDesktopIcon,
+  BookmarkIcon
 } from "@heroicons/react/24/outline";
 import { Inter } from '@next/font/google';
 
@@ -24,21 +23,21 @@ const page = ({ params }: { params: { browser: string; engine: string; os: strin
       name: "Browser",
       stat: browserName,
       version: browserVersion,
-      icon: UsersIcon,
+      icon: BookmarkIcon,
     },
     {
       id: 2,
       name: "Engine",
       stat: engineName,
       version: engineVersion,
-      icon: EnvelopeOpenIcon,
+      icon: CursorArrowRaysIcon,
     },
     {
       id: 3,
       name: "Operating system",
       stat: osName,
       version: osVersion,
-      icon: CursorArrowRaysIcon,
+      icon: ComputerDesktopIcon,
     },
   ];
 
@@ -65,13 +64,12 @@ const page = ({ params }: { params: { browser: string; engine: string; os: strin
                 {item.name}
               </p>
             </dt>
-            <dd className="ml-16 flex items-baseline pb-4">
+            <dd className="ml-16 flex items-baseline pb-4 align-baseline gap-2">
               <p className="text-2xl font-semibold text-gray-900">
                 {item.stat}
               </p>
-              {" "}
-              <p className="rounded-full leading-8 bg-green-100 px-2 text-xs font-semibold leading-5 text-green-800">
-                version: {item.version}
+              <p className="rounded-full bg-green-100 px-2 py-1 text-xs font-semibold text-green-800">
+                {item.version}
               </p>
             </dd>
           </div>
