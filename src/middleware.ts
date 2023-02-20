@@ -4,7 +4,7 @@ export default async function middleware(req : NextRequest) {
   const { nextUrl}  = req;
   const { browser, engine, os} = userAgent(req);
 
-  if (nextUrl.pathname !== '/') {
+  if (nextUrl.pathname !== '/check') {
     return;
   }
 
