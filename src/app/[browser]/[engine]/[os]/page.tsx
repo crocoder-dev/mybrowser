@@ -43,10 +43,6 @@ const page = ({
     },
   ];
 
-  function classNames(...classes: string[]) {
-    return classes.filter(Boolean).join(" ");
-  }
-
   return (
     <div
       className="max-w-3xl mx-auto bg-white py-24 sm:py-32"
