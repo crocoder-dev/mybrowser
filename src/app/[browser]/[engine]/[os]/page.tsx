@@ -6,6 +6,7 @@ import {
 import dynamic from 'next/dynamic'
 import UrlCopySkeleton from '@/components/urlCopySkeleton'
 import { Suspense } from "react";
+import Link from "next/link";
 
 const UrlCopy = dynamic(() => import('@/components/urlCopy'), {
   ssr: false,
@@ -84,6 +85,13 @@ const page = ({
       <Suspense fallback={<UrlCopySkeleton />}>
         <UrlCopy />
       </Suspense>
+      <div className="mx-auto max-w-7xl py-12 px-6 md:flex md:items-center md:justify-between lg:px-8">
+        <div className="md:order-1 md:mt-0">
+          <p className="text-center text-xs leading-5 text-gray-500">
+            Made by <Link className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600" href="https://twitter.com/devabram">David</Link> with ❤️ check out my <Link className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600" href="https://www.crocoder.dev/blog">blog posts</Link>.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };

@@ -1,11 +1,9 @@
-import Image from "next/image";
 import Link from "next/link";
-import Tweet from './tweet.png';
 
 export default function Home() {
   return (
     <div className="bg-white">
-      <main className="py-12 px-6 sm:px-6 sm:py-24 lg:px-8">
+      <main className="py-12 pt-6 sm:pt-6 sm:py-24 lg:pt-8">
         <div className="mx-auto max-w-2xl text-center">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900">
             Share Your Browser Info in a Link
@@ -23,13 +21,16 @@ export default function Home() {
           </div>
         </div>
         <p className="mx-auto max-w-xl text-lg leading-8 text-gray-600 mt-28">
-          {"BrowserInfo is a neat little tool that lets you share information about your internet browser with others. It\'s super easy to use, and the best part is that it doesn't track your data, use cookies, or show any ads."}
+          {"BrowserInfo is a neat little tool that lets you share information about your internet browser with others."}
         </p>
         <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-600">
           {"All you have to do is go to "}<Link className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600" href="https://www.browserinfo.link/check">browserinfo.link/check</Link>{" and your browser information will automatically appear on the screen. This includes things like the name and version of your browser, as well as details about the browser engine and operating system you're using."}
         </p>
         <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-600">
          {"This tool is really handy for people who work in web development or IT, as it allows them to easily get browser information from clients or coworkers. Plus, it's a great option if you're concerned about online privacy, since it doesn't collect any data about you. So maybe even"} <Link className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600" href="https://twitter.com/AdriaanvRossum">AdriaanvRossum</Link>{" can use it."}
+        </p>
+        <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-600">
+         {"If you still aren't convinced me take a look at the "} <Link className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600" href="https://github.com/crocoder-dev/mybrowser">Github Repo</Link>{" or take a gander at the "} <Link className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600" href="https://simpleanalytics.com/browserinfo.link">Simple Analytics page.</Link>
         </p>
       </main>
       <footer className="bg-white">
