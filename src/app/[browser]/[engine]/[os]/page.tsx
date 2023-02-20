@@ -1,13 +1,15 @@
 import {
   CursorArrowRaysIcon,
   ComputerDesktopIcon,
-  BookmarkIcon
+  BookmarkIcon,
 } from "@heroicons/react/24/outline";
-import { Inter } from '@next/font/google';
+import UrlCopy from "@/components/urlCopy";
 
-const inter = Inter({ subsets: ['latin'] });
-
-const page = ({ params }: { params: { browser: string; engine: string; os: string } }) => {
+const page = ({
+  params,
+}: {
+  params: { browser: string; engine: string; os: string };
+}) => {
   const { browser, engine, os } = params;
 
   const [browserName, ...browserRest] = browser.split("-");
@@ -46,7 +48,9 @@ const page = ({ params }: { params: { browser: string; engine: string; os: strin
   }
 
   return (
-    <div className={classNames("max-w-3xl mx-auto bg-white py-24 sm:py-32", inter.className)}>
+    <div
+      className="max-w-3xl mx-auto bg-white py-24 sm:py-32"
+    >
       <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
         My Browser Info:
       </h1>
@@ -75,6 +79,7 @@ const page = ({ params }: { params: { browser: string; engine: string; os: strin
           </div>
         ))}
       </dl>
+      <UrlCopy />
     </div>
   );
 };
