@@ -30,7 +30,7 @@ export default function Home() {
          {"This tool is really handy for people who work in web development or IT, as it allows them to easily get browser information from clients or coworkers. Plus, it's a great option if you're concerned about online privacy, since it doesn't collect any data about you. So maybe even"} <Link className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600" href="https://twitter.com/AdriaanvRossum">AdriaanvRossum</Link>{" can use it."}
         </p>
         <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-600">
-         {"If you still aren't convinced me take a look at the "} <Link className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600" href="https://github.com/crocoder-dev/mybrowser">Github Repo</Link>{" or take a gander at the "} <Link className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600" href="https://simpleanalytics.com/browserinfo.link">Simple Analytics page.</Link>
+         {"If you still aren't convinced, take a look at the "} <Link className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600" href="https://github.com/crocoder-dev/mybrowser">Github Repo</Link>{" or take a gander at the "} <Link className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600" href="https://simpleanalytics.com/browserinfo.link">Simple Analytics page.</Link>
         </p>
       </main>
       <footer className="bg-white">
