@@ -3,7 +3,13 @@ import {
   ComputerDesktopIcon,
   BookmarkIcon,
 } from "@heroicons/react/24/outline";
-import UrlCopy from "@/components/urlCopy";
+import dynamic from 'next/dynamic'
+import UrlCopySkeleton from '@/components/urlCopySkeleton'
+import { Suspense } from "react";
+
+const UrlCopy = dynamic(() => import('@/components/urlCopy'), {
+  ssr: false,
+})
 
 const page = ({
   params,
@@ -75,7 +81,9 @@ const page = ({
           </div>
         ))}
       </dl>
-      <UrlCopy />
+      <Suspense fallback={<UrlCopySkeleton />}>
+        <UrlCopy />
+      </Suspense>
     </div>
   );
 };
