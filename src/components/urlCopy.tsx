@@ -7,7 +7,7 @@ import {
 import { useState } from "react";
 
 const UrlCopy = () => {
-  const url = document.URL;
+  const url = !document ? null : document.URL;
 
   const [copied, setCopied] = useState(false);
 
