@@ -30,29 +30,29 @@ const page = ({
     {
       id: 1,
       name: "Browser",
-      stat: browserName,
-      version: browserVersion,
+      stat: decodeURI(browserName),
+      version: decodeURI(browserVersion)  ,
       icon: BookmarkIcon,
     },
     {
       id: 2,
       name: "Engine",
-      stat: engineName,
-      version: engineVersion,
+      stat: decodeURI(engineName),
+      version: decodeURI(engineVersion),
       icon: CursorArrowRaysIcon,
     },
     {
       id: 3,
       name: "Operating system",
-      stat: osName,
-      version: osVersion,
+      stat: decodeURI(osName),
+      version: decodeURI(osVersion),
       icon: ComputerDesktopIcon,
     },
   ];
 
   return (
     <div
-      className="max-w-3xl mx-auto bg-white py-24 sm:py-32 sm:px-6 px-3"
+      className="max-w-3xl mx-auto bg-white py-20 sm:py-32 sm:px-6 px-3"
     >
       <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
         My Browser Info:
@@ -88,7 +88,7 @@ const page = ({
       <div className="mx-auto max-w-7xl py-12 px-6 md:flex md:items-center md:justify-between lg:px-8">
         <div className="md:order-1 md:mt-0">
           <p className="text-center text-xs leading-5 text-gray-500">
-            Made by <Link className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600" href="https://twitter.com/devabram">David</Link> with ❤️ check out my <Link className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600" href="https://www.crocoder.dev/blog">blog posts</Link>.
+            Made by <Link className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600" href="https://twitter.com/devabram">David</Link>, check out my <Link className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600" href="https://www.crocoder.dev/blog">blog posts</Link>.
           </p>
         </div>
       </div>

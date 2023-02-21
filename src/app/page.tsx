@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="bg-white">
+    <div className="bg-white p-3">
       <main className="py-12 pt-6 sm:pt-6 sm:py-24 lg:pt-8">
         <div className="mx-auto max-w-2xl text-center">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900">
@@ -37,7 +37,7 @@ export default function Home() {
       <div className="mx-auto max-w-7xl py-0 px-6 md:flex md:items-center md:justify-between lg:px-8">
         <div className="md:order-1 md:mt-0">
           <p className="text-center text-xs leading-5 text-gray-500">
-            Made by <Link className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600" href="https://twitter.com/devabram">David</Link> with ❤️ check out my <Link className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600" href="https://www.crocoder.dev/blog">blog posts</Link>.
+            Made by <Link className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600" href="https://twitter.com/devabram">David</Link>, check out my <Link className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600" href="https://www.crocoder.dev/blog">blog posts</Link>.
           </p>
         </div>
       </div>
