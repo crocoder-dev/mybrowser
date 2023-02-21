@@ -52,7 +52,7 @@ const page = ({
 
   return (
     <div
-      className="max-w-3xl mx-auto bg-white py-24 sm:py-32 sm:px-6"
+      className="max-w-3xl mx-auto bg-white py-24 sm:py-32 sm:px-6 px-3"
     >
       <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
         My Browser Info:

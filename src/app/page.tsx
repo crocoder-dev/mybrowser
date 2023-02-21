@@ -14,14 +14,14 @@ export default function Home() {
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Link
               href="/check"
-              className="rounded-md bg-indigo-600 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="line-flex items-center rounded-md border border-transparent bg-indigo-500 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
             >
               Get info about you browser
             </Link>
           </div>
         </div>
-        <p className="mx-auto max-w-xl text-lg leading-8 text-gray-600 mt-28">
-          {"BrowserInfo is a neat little tool that lets you share information about your internet browser with others."}
+        <p className="mx-auto max-w-xl text-lg leading-8 text-gray-600 mt-24">
+          {"BrowserInfo is a neat little tool that lets you share information about your internet browser with others. Now with 100% more big buttons!"}
         </p>
         <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-600">
           {"All you have to do is go to "}<Link className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600" href="https://www.browserinfo.link/check">browserinfo.link/check</Link>{" and your browser information will automatically appear on the screen. This includes things like the name and version of your browser, as well as details about the browser engine and operating system you're using."}
