@@ -1,16 +1,17 @@
 "use client";
 import {
-  LinkIcon,
   DocumentDuplicateIcon,
   HandThumbUpIcon,
 } from "@heroicons/react/20/solid";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 
 
 const UrlCopy = () => {
   const [url, setUrl] = useState("");
   const [copied, setCopied] = useState(false);
+
+  console.log(url);
 
   useEffect(() => {
     setUrl(document.URL);
