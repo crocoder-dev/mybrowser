@@ -4,15 +4,17 @@ import {
   DocumentDuplicateIcon,
   HandThumbUpIcon,
 } from "@heroicons/react/20/solid";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 
 
 const UrlCopy = () => {
-  const url = useRef(document.URL);
+  const [url, setUrl] = useState("");
   const [copied, setCopied] = useState(false);
 
-  console.log(url.current);
+  useEffect(() => {
+    setUrl(document.URL);
+  }, []);
 
   return (
     <div className="p-3">
@@ -21,7 +23,7 @@ const UrlCopy = () => {
         type="button"
         className="inline-flex items-center rounded-md border border-transparent bg-indigo-500 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
         onClick={() => {
-          navigator.clipboard.writeText(url.current).then(
+          navigator.clipboard.writeText(url).then(
             () => {
               setCopied(true);
               setTimeout(() => setCopied(false), 2000);
